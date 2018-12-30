@@ -4,6 +4,7 @@ import {List, Flex, Popup} from 'antd-mobile';
 class Staff extends Component {
     constructor(props) {
         super(props);
+        console.log(props.staff);
         this.state = {
             staff: props.staff,
         }
@@ -47,13 +48,13 @@ class Staff extends Component {
                             <Flex.Item style={{flex: 1}}/>
                             <Flex.Item style={{flex: 9}}><strong>学历：</strong></Flex.Item>
                             <Flex.Item
-                                style={{flex: 21}}>{staff.info.education ? staff.info.education : '无'}</Flex.Item>
+                                style={{flex: 21}}>{staff.education ? staff.education : '无'}</Flex.Item>
                         </Flex>
                         <Flex>
                             <Flex.Item style={{flex: 1}}/>
                             <Flex.Item style={{flex: 9}}><strong>身高/体重：</strong></Flex.Item>
                             <Flex.Item
-                                style={{flex: 21}}>{staff.info.height ? staff.info.height : '0'}cm/{staff.info.weight ? staff.info.weight : '0'}kg</Flex.Item>
+                                style={{flex: 21}}>{staff.height ? staff.height : '0'}cm/{staff.weight ? staff.weight : '0'}kg</Flex.Item>
                         </Flex>
                         <Flex>
                             <Flex.Item style={{flex: 1}}/>
@@ -74,7 +75,7 @@ class Staff extends Component {
                             <Flex.Item style={{flex: 1}}/>
                             <Flex.Item style={{flex: 9}}><strong>招聘人：</strong></Flex.Item>
                             <Flex.Item
-                                style={{flex: 21}}>{staff.info.recruiter_name ? staff.info.recruiter_name : '无'}</Flex.Item>
+                                style={{flex: 21}}>{staff.recruiter_name ? staff.recruiter_name : '无'}</Flex.Item>
                         </Flex>
                         <Flex>
                             <Flex.Item style={{flex: 1}}/>
