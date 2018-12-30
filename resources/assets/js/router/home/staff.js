@@ -24,6 +24,11 @@ class Staff extends Component {
 
     staffInfoDetail() {
         const staff = this.state.staff;
+        const card = staff.id_card_number;
+        const year = card.substring(6, 10);
+        const month = card.substring(10, 12);
+        const day = card.substring(12, 14);
+        const birthday = year + '年' + month + '月' + day + '日';
         return (
             <List>
                 <List.Item>
@@ -41,7 +46,7 @@ class Staff extends Component {
                         <Flex>
                             <Flex.Item style={{flex: 1}}/>
                             <Flex.Item style={{flex: 9}}><strong>生日：</strong></Flex.Item>
-                            <Flex.Item style={{flex: 21}}>{staff.birthday}</Flex.Item>
+                            <Flex.Item style={{flex: 21}}>{birthday}</Flex.Item>
                         </Flex>
                         <Flex>
                             <Flex.Item style={{flex: 1}}/>

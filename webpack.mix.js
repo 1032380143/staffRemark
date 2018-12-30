@@ -57,5 +57,6 @@ mix.webpackConfig({
 });
 
 mix.react('resources/assets/js/index.js', 'public/js/index.js')
+    .version()
     .less('resources/assets/sass/index.less', 'public/css/index.css');
 

@@ -19,7 +19,7 @@
 </body>
 <script src="{{asset('/js/dingtalk.js')}}"></script>
 <script src="{{asset('js/app.js')}}"></script>
-<script src="{{asset('js/index.js')}}"></script>
+<script src="{{mix('js/index.js')}}"></script>
 <script>
     dd.ready(function(){
        dd.ui.webViewBounce.disable();
