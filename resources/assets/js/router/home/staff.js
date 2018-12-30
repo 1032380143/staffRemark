@@ -4,7 +4,6 @@ import {List, Flex, Popup} from 'antd-mobile';
 class Staff extends Component {
     constructor(props) {
         super(props);
-        console.log(props.staff);
         this.state = {
             staff: props.staff,
         }
